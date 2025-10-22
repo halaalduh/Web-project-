@@ -493,3 +493,13 @@ background:var(--mint);
   .footsocial .sociallist{justify-content:center}
   .bapair{grid-template-columns:1fr}
 }
+/* السعر */
+.price-tag {
+  color: #4d684d; /* olive */
+  font-weight: 600;
+  margin: 8px 0;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+

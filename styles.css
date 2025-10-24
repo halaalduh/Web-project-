@@ -50,7 +50,7 @@ body{
 }
 
 /* ===== Logo ===== */
-.logoimg {
+.logoimg a {
   width: 68px;
   height: 68px;
   border-radius: 16px;
@@ -92,16 +92,18 @@ body{
 
 .navlinks a:hover { text-decoration: underline; }
 
-.homelinkbar { background: #e8f0e7; }
+.homelinkbar { background: #e8f0e7;}
 
-.homelinkbar a {
+.homelinkbar  a {
   display: block;
-  color: var(--olive-700);
   text-decoration: none;
   font-weight: 700;
   padding: 6px 0;
   text-align: left;
+
+  
 }
+ 
 
 .homelinkbar a:hover { text-decoration: underline; }
 
@@ -501,5 +503,145 @@ background:var(--mint);
   font-size: 1rem;
   letter-spacing: 0.4px;
   text-align: center;
+}
+
+
+/* === Page-specific additions by Renad === */
+
+/* جدول صفحة Customer Dashboard */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-block: 20px;
+}
+
+th, td {
+  border: 1px solid var(--olive);
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f3ede4; 
+  color: var(--olive-700);
+}
+
+td:first-child {
+  background-color: var(--olive);
+  color: white;
+  font-weight: bold;
+}
+
+/* أزرار عامة */
+.button {
+  display:block;
+  padding: 10px 15px;
+  border: 2px solid var(--olive);
+  border-radius: 12px;
+  background: white;
+  color: var(--olive);
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: center;
+
+  
+}
+
+.button:hover {
+  background: var(--olive);
+  color: white;
+}
+
+/* شريط عنوان الصفحة */
+.page-title {
+  background: var(--olive);
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 14px 0;
+  font-weight: 700;
+}
+
+/* ==== Request a Service Page ==== */
+
+.service-form {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  border: 1px solid #ccd6cc;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.service-form label {
+  display: block;
+  font-weight: 700;
+  color: var(--olive-700);
+  margin-bottom: 6px;
+}
+
+.service-form input,
+.service-form select,
+.service-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  background: #fff;
+  font-family: inherit;
+}
+
+.service-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.service-form button {
+  display: block;
+  width: 100%;
+  background: var(--olive);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.service-form button:hover {
+  background: var(--olive-700);
+}
+
+/* ===== Title Section ===== */
+.pagehero--solid {
+  background: var(--olive-700);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.pagehero--solid .sectitle {
+  color: white;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.stars {
+  text-align: center;
+  font-size: 30px;
+  color: #bbb;
+  margin: 15px 0 25px;
+  cursor: pointer;
+}
+
+.stars span {
+  transition: color 0.2s;
 }
 

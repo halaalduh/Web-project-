@@ -426,13 +426,13 @@ color:var(--muted);
   font-weight: 600;
 }
 
-/* الكرت */
+
 .bapair{
   display: flex;
   gap: 18px;
 }
 
-/* الصورة */
+
 .baphoto{
   flex: 1 1 48%;
   height: 280px;
@@ -1058,3 +1058,5 @@ body.dashboard-page{ background:var(--beige); }
   background:#9e9e9e;
   color:#fff;
 }
+
+

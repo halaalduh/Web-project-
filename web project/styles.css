@@ -1142,7 +1142,7 @@ body.dashboard-page {
   border:1px solid #ccd6cc;
 }
 
-.button:hover{ background:#e3ece2; }
+.button:hover{ background:var(--olive-700); }
 
 /* this part makes the buttons fit small screens */
 @media (max-width:720px){
@@ -1379,7 +1379,8 @@ main {
   border-radius: 10px;
   font-weight: 700;
   cursor: pointer;              
-  transition: 0.3s;             
+  transition: 0.3s; 
+  width:100%;  
 }
 
 /* i used hover effect to make the button darker */
